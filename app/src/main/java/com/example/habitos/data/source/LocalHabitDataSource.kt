@@ -3,7 +3,7 @@ package com.example.habitos.data.source
 import android.content.Context
 import androidx.security.crypto.EncryptedSharedPreferences
 import androidx.security.crypto.MasterKeys
-import com.example.smarthabitsmanager.data.model.Habit
+import com.example.habitos.data.model.Habit
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import dagger.hilt.android.qualifiers.ApplicationContext

@@ -1,4 +1,4 @@
-package com.example.events.ui.screens
+package com.example.habitos.ui.login
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -18,7 +18,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.example.habitos.R
-import com.example.habitos.data.api.*
+import com.example.habitos.data.api.AuthService
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

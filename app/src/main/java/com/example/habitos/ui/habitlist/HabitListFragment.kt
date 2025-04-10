@@ -1,6 +1,5 @@
 package com.example.habitos.ui.habitlist
 
-
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -37,7 +36,7 @@ class HabitListFragment : Fragment() {
 
         habitListAdapter = HabitListAdapter(viewModel::deleteHabit)
         binding.habitRecyclerView.apply {
-            layoutManager = LinearLayoutManager(requireContext())
+            layoutManager = LinearLayoutManager(requireContext()) // Inicialización correcta
             adapter = habitListAdapter
         }
 

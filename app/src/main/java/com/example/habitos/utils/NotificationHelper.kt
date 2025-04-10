@@ -27,13 +27,13 @@ object NotificationHelper {
 
     fun showNotification(context: Context, title: String, message: String) {
         val builder = NotificationCompat.Builder(context, CHANNEL_ID)
-            .setSmallIcon(R.drawable.ic_launcher_foreground) // Replace with your notification icon
+            .setSmallIcon(R.drawable.ic_notification) // Asegúrate de tener este icono
             .setContentTitle(title)
             .setContentText(message)
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
 
         val notificationManager: NotificationManager =
             context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-        notificationManager.notify(1, builder.build()) // Use a unique ID for each notification
+        notificationManager.notify(1, builder.build()) // Usa un ID único para cada notificación
     }
 }

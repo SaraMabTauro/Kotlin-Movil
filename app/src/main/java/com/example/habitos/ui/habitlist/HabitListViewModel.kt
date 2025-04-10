@@ -1,6 +1,5 @@
 package com.example.habitos.ui.habitlist
 
-
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.habitos.data.model.Habit

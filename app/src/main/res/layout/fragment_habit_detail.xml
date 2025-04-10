@@ -52,21 +52,23 @@
 
         <TextView
             android:id="@+id/locationTextView"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Ubicación:"
+            android:text="Ubicación: "
+            app:layout_constraintTop_toBottomOf="@+id/selectDueDateButton"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectDueDateButton" />
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <Button
-            android:id="@+id/selectLocationButton"
+            android:id="@+id/getLocationButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Seleccionar Ubicación"
+            android:text="Obtener Ubicación"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/locationTextView" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationTextView"/>
 
         <TextView
             android:id="@+id/priorityTextView"
@@ -76,7 +78,7 @@
             android:text="Prioridad:"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectLocationButton" />
+            app:layout_constraintTop_toBottomOf="@+id/getLocationButton" />
 
         <SeekBar
             android:id="@+id/prioritySeekBar"
